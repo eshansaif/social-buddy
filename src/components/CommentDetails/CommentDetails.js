@@ -26,12 +26,13 @@ const CommentDetails = (props) => {
 
 
     const [randomImage, setRandomImage] = useState();
-
+    // show random image in comment
     useEffect(() => {
         fetch(`https://randomuser.me/api/?results=1`)
         .then(res => res.json())
         .then(data => setRandomImage(data.results[0].picture.large))
     },[])
+    
     return (
         <div>
             <List className={classes.root}>

@@ -104,7 +104,10 @@ const PostDetails = () => {
                         aria-label="show more"
                     >
                     </IconButton>
-                    <Link style={{ color:'rgb(0 0 0 / 54%)' }}><h6>Comment</h6></Link>
+                    <IconButton>
+                        <h6 style={{ color:'rgb(0 0 0 / 54%)' }}>Comment</h6>
+                    </IconButton>
+                    
                 </CardActions>
             </Card>
         }

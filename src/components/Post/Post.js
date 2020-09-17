@@ -51,34 +51,34 @@ const Post = (props) => {
     return (
 
     <div style={customStyle} className={classes1.root}>
-        <Grid container spacing={3}>
-            <Grid item xs={12}>
-                <Paper className={classes.paper}>
-                    <Typography variant="h5" gutterBottom>
-                        {title.toUpperCase()}
-                    </Typography>
+    <Grid container spacing={3}>
+        <Grid item xs={12}>
+            <Paper className={classes.paper}>
+                <Typography variant="h5" gutterBottom>
+                    {title.toUpperCase()}
+                </Typography>
+            
+                <Typography variant="subtitle1" gutterBottom>
+                    < AccountCircleIcon /> {user.name} | <MailIcon /> {user.email}
+                </Typography>
                 
-                    <Typography variant="subtitle1" gutterBottom>
-                        < AccountCircleIcon /> {user.name} | <MailIcon /> {user.email}
-                    </Typography>
-                    
-                    <Typography variant="h6" gutterBottom>
-                        {body.charAt(0).toUpperCase() + body.slice(1)}.
-                    </Typography>
-                    
-                    <Typography variant="button" display="block" gutterBottom>
-                        <Link to={`/post/${id}`} style={{textDecoration:'none'}}>
-                            <Button variant="contained" style={{backgroundColor:'#6c757d', color:'white'}}>
-                                View Details
-                            </Button>
+                <Typography variant="h6" gutterBottom>
+                    {body.charAt(0).toUpperCase() + body.slice(1)}.
+                </Typography>
+                
+                <Typography variant="button" display="block" gutterBottom>
+                    <Link to={`/post/${id}`} style={{textDecoration:'none'}}>
+                        <Button variant="contained" style={{backgroundColor:'#6c757d', color:'white'}}>
+                            View Details
+                        </Button>
 
-                        </Link>
-                    </Typography>
-                </Paper>
-            </Grid>
-                
+                    </Link>
+                </Typography>
+            </Paper>
         </Grid>
-    </div>
+            
+    </Grid>
+</div>
         
     );
 };
