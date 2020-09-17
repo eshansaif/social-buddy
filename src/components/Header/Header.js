@@ -9,6 +9,7 @@ import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
+import RecordVoiceOverIcon from '@material-ui/icons/RecordVoiceOver';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
@@ -175,7 +176,8 @@ const Header = () => {
               color="inherit"
               aria-label="open drawer"
             >
-              <MenuIcon />
+              {/* <MenuIcon /> */}
+              <RecordVoiceOverIcon fontSize="large" />
             </IconButton>
           </Link>
           <Link to={`/home`} style={{ color:'white', textDecoration:'none' }}>
