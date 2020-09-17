@@ -3,8 +3,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import NoMatch from './components/NoMatch/NoMatch';
@@ -14,15 +13,10 @@ import { Container } from '@material-ui/core';
 
 function App() {
   return (
-
-
-
     <React.Fragment>
-      <Header className="fixed-top"></Header>
-            <Container fixed>
-    
-    <Router>
-      
+      <Router>
+      <Header></Header>
+            <Container fixed> 
       <Switch>
 
         <Route exact path="/">
@@ -42,9 +36,10 @@ function App() {
         </Route>
 
       </Switch>
-    </Router>
+    
 
       </Container>
+      </Router>
     </React.Fragment>
     
   );

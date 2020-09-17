@@ -41,7 +41,7 @@ const CommentDetails = (props) => {
                     </ListItemAvatar>
 
                     <ListItemText
-                        primary={name}
+                        primary={name.toUpperCase()}
                         secondary={
                             <React.Fragment>
                                 <Typography
@@ -50,9 +50,9 @@ const CommentDetails = (props) => {
                                     className={classes.inline}
                                     color="textPrimary"
                                 >
-                                    {email}
+                                    {email} <br/>
                                 </Typography>
-                                    {` — "${body}"`}
+                                    {` — "${body.charAt(0).toUpperCase() + body.slice(1)}."`}
                             </React.Fragment>
                         }
                     />

@@ -12,17 +12,13 @@ const Comment = () => {
         .then(res => res.json())
         .then(data => setComments(data))
     },[])
-
     
     return (
-        <div>
-            <h3>Comments({comments.length})</h3>
-            {
-                comments.map(comment => <CommentDetails comment={comment}></CommentDetails> )
-            }
-
-
-        
+    <div>
+        <h4>Comments({comments.length})</h4>
+        {
+            comments.map((comment, idx) => <CommentDetails comment={comment} key={idx}></CommentDetails> )
+        }  
     </div>
     );
 };
